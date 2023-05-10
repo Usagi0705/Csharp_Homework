@@ -72,7 +72,6 @@ C:\Users\User\Desktop\CSharp_Homework\Homework\obj\Debug\Homework.HW_GuessNumber
 C:\Users\User\Desktop\CSharp_Homework\Homework\obj\Debug\Homework.HW_Hello.resources
 C:\Users\User\Desktop\CSharp_Homework\Homework\obj\Debug\Homework.HW_Loan.resources
 C:\Users\User\Desktop\CSharp_Homework\Homework\obj\Debug\Homework.HW_ForDoWhile.resources
-C:\Users\User\Desktop\CSharp_Homework\Homework\obj\Debug\Homework.MyClac.resources
 C:\Users\User\Desktop\CSharp_Homework\Homework\obj\Debug\Homework.HW_POS.resources
 C:\Users\User\Desktop\CSharp_Homework\Homework\obj\Debug\Homework.StudentsGrade.resources
 C:\Users\User\Desktop\CSharp_Homework\Homework\obj\Debug\Homework.HW_StudentsGrade_List.resources
@@ -222,3 +221,5 @@ C:\Users\User\Desktop\0509-2\Csharp_Homework\Homework\obj\Debug\Homework.csproj.
 C:\Users\User\Desktop\0509-2\Csharp_Homework\Homework\obj\Debug\Homework.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\0509-2\Csharp_Homework\Homework\obj\Debug\Homework.MyCalc.resources
 C:\Users\User\Desktop\0509-2\Csharp_Homework\Homework\obj\Debug\Homework.HW_ScreenSaver.resources
+C:\Users\User\Desktop\Csharp_Homework\Homework\obj\Debug\Homework.MyCalc.resources
+C:\Users\User\Desktop\Csharp_Homework\Homework\obj\Debug\Homework.HW_ScreenSaver.resources

@@ -18,20 +18,17 @@ namespace Homework
             InitializeComponent();
         }
 
-        int guess,count,min,max;
+        private void btnShowAnswer_Click(object sender, EventArgs e)
+        {
+            Random r = new Random();
+            int Answer = r.Next(1, 100);
+            MessageBox.Show($"Answer：{Answer}");
+        }
 
         private void btnGuess_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void HW_GuessNumber_Load(object sender, EventArgs e)
-        {
-            Random r = new Random();
-            guess = r.Next(1,100);
-            min = 0;
-            max = 100;
-            
+            HW_GuessNumber_Subform Subform = new HW_GuessNumber_Subform(this);
+            Subform.Show();
         }
     }
 }

@@ -149,16 +149,6 @@ namespace Homework
             Notepad.Show();
         }
 
-        //private void btnGuessNumber_Click(object sender, EventArgs e)
-        //{
-        //    splitContainer2.Panel2.Controls.Clear();
-
-        //    HW_GuessNumber GuessNumber = new HW_GuessNumber();
-        //    GuessNumber.TopLevel = false;
-        //    splitContainer2.Panel2.Controls.Add(GuessNumber);
-        //    GuessNumber.Show();
-        //}
-
         private void btnAlarm_Click(object sender, EventArgs e)
         {
             splitContainer2.Panel2.Controls.Clear();
@@ -167,6 +157,16 @@ namespace Homework
             Alarm.TopLevel = false;
             splitContainer2.Panel2.Controls.Add(Alarm);
             Alarm.Show();
+        }
+
+        private void btnGuessNumber_Click(object sender, EventArgs e)
+        {
+            splitContainer2.Panel2.Controls.Clear();
+
+            HW_GuessNumber GuessNumber = new HW_GuessNumber();
+            GuessNumber.TopLevel = false;
+            splitContainer2.Panel2.Controls.Add(GuessNumber);
+            GuessNumber.Show();
         }
     }
 }

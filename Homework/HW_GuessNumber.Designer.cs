@@ -63,6 +63,7 @@
             this.btnShowAnswer.TabIndex = 2;
             this.btnShowAnswer.Text = "Show Answer";
             this.btnShowAnswer.UseVisualStyleBackColor = true;
+            this.btnShowAnswer.Click += new System.EventHandler(this.btnShowAnswer_Click);
             // 
             // HW_GuessNumber
             // 
@@ -74,16 +75,14 @@
             this.Controls.Add(this.labSelectNumber);
             this.Name = "HW_GuessNumber";
             this.Text = "Guess Number";
-            this.Load += new System.EventHandler(this.HW_GuessNumber_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labSelectNumber;
         private System.Windows.Forms.Button btnGuess;
         private System.Windows.Forms.Button btnShowAnswer;
+        internal System.Windows.Forms.Label labSelectNumber;
     }
 }

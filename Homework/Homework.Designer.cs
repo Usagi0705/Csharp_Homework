@@ -45,6 +45,7 @@
             this.btnMyCalc = new System.Windows.Forms.Button();
             this.btnHello = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnGuessNumber = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -98,6 +99,7 @@
             // 
             this.splitContainer2.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer2.Panel1.BackgroundImage")));
             this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.splitContainer2.Panel1.Controls.Add(this.btnGuessNumber);
             this.splitContainer2.Panel1.Controls.Add(this.btnScreenSaver);
             this.splitContainer2.Panel1.Controls.Add(this.btnPictureViewer);
             this.splitContainer2.Panel1.Controls.Add(this.btnStudentStructForm);
@@ -124,7 +126,7 @@
             // 
             this.btnScreenSaver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnScreenSaver.Location = new System.Drawing.Point(89, 384);
+            this.btnScreenSaver.Location = new System.Drawing.Point(90, 361);
             this.btnScreenSaver.Name = "btnScreenSaver";
             this.btnScreenSaver.Size = new System.Drawing.Size(246, 24);
             this.btnScreenSaver.TabIndex = 14;
@@ -136,7 +138,7 @@
             // 
             this.btnPictureViewer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPictureViewer.Location = new System.Drawing.Point(89, 122);
+            this.btnPictureViewer.Location = new System.Drawing.Point(90, 99);
             this.btnPictureViewer.Name = "btnPictureViewer";
             this.btnPictureViewer.Size = new System.Drawing.Size(246, 24);
             this.btnPictureViewer.TabIndex = 13;
@@ -148,7 +150,7 @@
             // 
             this.btnStudentStructForm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStudentStructForm.Location = new System.Drawing.Point(89, 325);
+            this.btnStudentStructForm.Location = new System.Drawing.Point(90, 302);
             this.btnStudentStructForm.Name = "btnStudentStructForm";
             this.btnStudentStructForm.Size = new System.Drawing.Size(246, 24);
             this.btnStudentStructForm.TabIndex = 12;
@@ -160,7 +162,7 @@
             // 
             this.btnAlarm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAlarm.Location = new System.Drawing.Point(89, 297);
+            this.btnAlarm.Location = new System.Drawing.Point(90, 274);
             this.btnAlarm.Name = "btnAlarm";
             this.btnAlarm.Size = new System.Drawing.Size(246, 24);
             this.btnAlarm.TabIndex = 11;
@@ -172,7 +174,7 @@
             // 
             this.btnDrawPaint.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDrawPaint.Location = new System.Drawing.Point(89, 354);
+            this.btnDrawPaint.Location = new System.Drawing.Point(90, 331);
             this.btnDrawPaint.Name = "btnDrawPaint";
             this.btnDrawPaint.Size = new System.Drawing.Size(246, 24);
             this.btnDrawPaint.TabIndex = 7;
@@ -184,7 +186,7 @@
             // 
             this.btnNotepad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNotepad.Location = new System.Drawing.Point(89, 180);
+            this.btnNotepad.Location = new System.Drawing.Point(90, 157);
             this.btnNotepad.Name = "btnNotepad";
             this.btnNotepad.Size = new System.Drawing.Size(246, 24);
             this.btnNotepad.TabIndex = 6;
@@ -196,7 +198,7 @@
             // 
             this.btnLoan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLoan.Location = new System.Drawing.Point(89, 62);
+            this.btnLoan.Location = new System.Drawing.Point(90, 39);
             this.btnLoan.Name = "btnLoan";
             this.btnLoan.Size = new System.Drawing.Size(246, 24);
             this.btnLoan.TabIndex = 5;
@@ -208,7 +210,7 @@
             // 
             this.btnForDoWhile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnForDoWhile.Location = new System.Drawing.Point(89, 92);
+            this.btnForDoWhile.Location = new System.Drawing.Point(90, 69);
             this.btnForDoWhile.Name = "btnForDoWhile";
             this.btnForDoWhile.Size = new System.Drawing.Size(246, 24);
             this.btnForDoWhile.TabIndex = 4;
@@ -220,7 +222,7 @@
             // 
             this.btnPOS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPOS.Location = new System.Drawing.Point(89, 150);
+            this.btnPOS.Location = new System.Drawing.Point(90, 127);
             this.btnPOS.Name = "btnPOS";
             this.btnPOS.Size = new System.Drawing.Size(246, 24);
             this.btnPOS.TabIndex = 3;
@@ -232,7 +234,7 @@
             // 
             this.btnXOGame.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXOGame.Location = new System.Drawing.Point(89, 268);
+            this.btnXOGame.Location = new System.Drawing.Point(90, 245);
             this.btnXOGame.Name = "btnXOGame";
             this.btnXOGame.Size = new System.Drawing.Size(246, 24);
             this.btnXOGame.TabIndex = 2;
@@ -244,7 +246,7 @@
             // 
             this.btnMyCalc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMyCalc.Location = new System.Drawing.Point(89, 239);
+            this.btnMyCalc.Location = new System.Drawing.Point(90, 216);
             this.btnMyCalc.Name = "btnMyCalc";
             this.btnMyCalc.Size = new System.Drawing.Size(246, 24);
             this.btnMyCalc.TabIndex = 1;
@@ -256,7 +258,7 @@
             // 
             this.btnHello.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHello.Location = new System.Drawing.Point(89, 210);
+            this.btnHello.Location = new System.Drawing.Point(90, 187);
             this.btnHello.Name = "btnHello";
             this.btnHello.Size = new System.Drawing.Size(246, 24);
             this.btnHello.TabIndex = 0;
@@ -271,6 +273,18 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 12);
             this.label2.TabIndex = 0;
+            // 
+            // btnGuessNumber
+            // 
+            this.btnGuessNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuessNumber.Location = new System.Drawing.Point(90, 391);
+            this.btnGuessNumber.Name = "btnGuessNumber";
+            this.btnGuessNumber.Size = new System.Drawing.Size(246, 24);
+            this.btnGuessNumber.TabIndex = 15;
+            this.btnGuessNumber.Text = "Guess Number";
+            this.btnGuessNumber.UseVisualStyleBackColor = true;
+            this.btnGuessNumber.Click += new System.EventHandler(this.btnGuessNumber_Click);
             // 
             // Homework
             // 
@@ -312,5 +326,6 @@
         private System.Windows.Forms.Button btnScreenSaver;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnGuessNumber;
     }
 }

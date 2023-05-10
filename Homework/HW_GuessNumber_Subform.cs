@@ -13,35 +13,51 @@ namespace Homework
 {
     public partial class HW_GuessNumber_Subform : Form
     {
-        Random RandomNumber = new Random();
-        int GuessNumber;
-
-        private void CheckAnswer()
-        {
-            int Answer = RandomNumber.Next(1,100);
-            if (GuessNumber == Answer)
-                MessageBox.Show($"Congradulations!!!You got{Answer}!!!");
-            else if (GuessNumber < Answer && Answer < 100)
-                MessageBox.Show($"Too Small!!\nBetween {GuessNumber} and 100");
-            else if (GuessNumber > Answer)
-                MessageBox.Show($"Too Large!!\nBetween  and ");
-        }
-        //todo
-        //if Answer 65
-        //T1:45 -->too small between 45 and 100
-        //T2:70 -->too large between 45 and 70
-        //T3:60 -->too small between 60 and 70
-        //T4:65 -->GOT
-
-
-        public HW_GuessNumber_Subform()
+        public HW_GuessNumber_Subform(HW_GuessNumber Parentform)
         {
             InitializeComponent(); 
+            this.Tag = Parentform;
         }
 
-        private void btnEnter_Click(object sender, EventArgs e)
+        int Answer,min,max;
+        Random r = new Random();
+
+        internal void btnEnter_Click(object sender, EventArgs e)
+        {    
+            if(Answer == 0)
+            {
+                Answer = r.Next(1,100);
+                min = 1;
+                max = 100;
+            }
+            bool isNum = int.TryParse(txtNumber.Text, out int Guess);
+            if (isNum)
+            {
+                Guess = Convert.ToInt32(txtNumber.Text);
+                {
+                    if (Guess == Answer)
+                        MessageBox.Show($"Congradulations!!!You got {Answer}!!!");
+                    else if (Guess > Answer)
+                    {
+                        max = Guess;
+                        ((HW_GuessNumber)this.Tag).labSelectNumber.Text = $"Too Big!!! Between {min} and {max}";
+                    }
+                    else if (Guess < Answer)
+                    {
+                        min = Guess;
+                        ((HW_GuessNumber)this.Tag).labSelectNumber.Text = $"Too Small!!!Between {min} and {max}";
+                    }
+                    else
+                        MessageBox.Show($"請輸入{min}-{max}之間的數字", "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);        
+                }
+            }
+            else
+                MessageBox.Show($"請輸入{min}-{max}之間的數字","錯誤",MessageBoxButtons.OK,MessageBoxIcon.Error);
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            RandomNumber.Next(0, 100);
+            Close();
         }
     }
 }
